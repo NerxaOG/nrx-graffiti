@@ -20,7 +20,7 @@ Built to avoid common decal issues like tilting, jitter, and accidental floor pl
 
 ## Dependencies
 
-- qb-core
+- qbx-core
 - ox_lib
 - ox_inventory
 
