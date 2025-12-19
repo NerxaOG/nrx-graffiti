@@ -1,76 +1,48 @@
-nrx-graffiti
+# 🖌️ nrx-graffiti
 
-Simple, wall-only graffiti system for FiveM using image URLs.
+A simple, wall-only graffiti system for FiveM using image URLs.
 
-Designed to avoid the usual decal issues (tilting, jitter, floor placement bugs) and keep placement predictable.
+Built to avoid common decal issues like tilting, jitter, and accidental floor placement, while keeping placement fast and predictable.
 
-Features
+---
 
-Wall-only graffiti placement
+## Features
 
-Always vertical and flush to the surface
+- Wall-only graffiti placement
+- Always vertical and flush to the surface
+- Image URLs rendered via DUI
+- Live preview before placing
+- Adjustable size and rotation
+- Mouse wheel roll adjustment
+- No camera rotation hacks
 
-Image URLs via DUI
+---
 
-Live preview before placing
+## Dependencies
 
-Adjustable size and rotation
+- qb-core
+- ox_lib
+- ox_inventory
 
-Mouse wheel roll adjustment
+---
 
-No camera rotation hacks
+## Installation
 
-Dependencies
+1. Drop the resource into your `resources` folder
+2. Add to your `server.cfg`:
 
-qb-core
+3. Restart the server
 
-ox_lib
+---
 
-ox_inventory
+## Item
 
-Installation
+You’ll need a spray paint item in **ox_inventory**:
 
-Drop the resource into your resources folder
-
-Add to server.cfg:
-
-ensure nrx-graffiti
-
-
-Restart the server
-
-Item
-
-You’ll need a spray paint item in ox_inventory:
-
+```lua
 ['spray_paint'] = {
-    label = 'Spray Paint',
-    weight = 200,
-    stack = true,
-    close = true
+ label = 'Spray Paint',
+ weight = 200,
+ stack = true,
+ close = true
 }
-
-
-Using the item opens the placement mode.
-
-Controls
-Action	Key
-Increase size	Arrow Up
-Decrease size	Arrow Down
-Rotate (left/right)	Arrow Left / Right
-Tilt (front/back)	Mouse Wheel
-Place	Enter
-Cancel	Backspace
-Notes
-
-Ground placement is intentionally blocked
-
-Graffiti can be placed in air if misaligned and retried
-
-Image domains can be restricted in config.lua
-
-Marker-based rendering (no entities)
-
-Author
-
-Nerxa
