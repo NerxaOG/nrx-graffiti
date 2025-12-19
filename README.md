@@ -37,12 +37,26 @@ Built to avoid common decal issues like tilting, jitter, and accidental floor pl
 
 ## Item
 
-You’ll need a spray paint item in **ox_inventory**:
+3. Restart the server
 
+---
+
+## Items
+
+You’ll need the following items in **ox_inventory**:
+
+### Spray Paint
 ```lua
 ['spray_paint'] = {
  label = 'Spray Paint',
  weight = 200,
  stack = true,
  close = true
+},
+['paint_scraper'] = {
+    label = 'Paint Scraper',
+    weight = 150,
+    stack = true,
+    close = true
 }
+
